@@ -782,17 +782,7 @@ class TestModels(CorrectnessTest):
             },
 
             'tensorflow' : {
-                'vgg19'                 : [OnnxEmit],
                 'inception_v1'          : [OnnxEmit],
-                'inception_v3'          : [OnnxEmit],
-                # 'resnet_v1_50'          : [OnnxEmit], # POOL: strides > window_shape not supported due to inconsistency between CPU and GPU implementations
-                # 'resnet_v1_152'         : [OnnxEmit], # POOL: strides > window_shape not supported due to inconsistency between CPU and GPU implementations
-                # 'resnet_v2_50'          : [OnnxEmit], # POOL: strides > window_shape not supported due to inconsistency between CPU and GPU implementations
-                # 'resnet_v2_152'         : [OnnxEmit], # POOL: strides > window_shape not supported due to inconsistency between CPU and GPU implementations
-                'mobilenet_v1_1.0'      : [OnnxEmit],
-                'mobilenet_v2_1.0_224'  : [OnnxEmit],
-                # 'nasnet-a_large'        : [OnnxEmit], # POOL: strides > window_shape not supported due to inconsistency between CPU and GPU implementations
-                'inception_resnet_v2'   : [OnnxEmit],
             },
 
             'tensorflow_frozen' : {
