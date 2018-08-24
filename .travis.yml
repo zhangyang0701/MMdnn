@@ -22,7 +22,7 @@ matrix:
       python: "2.7"
       env: TEST_ONNX=false
       install:
-        - pip install -q tensorflow==1.8.1
+        - pip install -q tensorflow==1.8.0
         - pip install -q -r requirements.txt
         - pip install -q http://download.pytorch.org/whl/cpu/torch-0.4.0-cp27-cp27mu-linux_x86_64.whl
         - pip install -q torchvision
@@ -33,7 +33,7 @@ matrix:
       python: "2.7"
       env: TEST_ONNX=true
       install:
-        - pip install -q tensorflow==1.8.1
+        - pip install -q tensorflow==1.8.0
         - pip install -q -r requirements.txt
         - pip install -q http://download.pytorch.org/whl/cpu/torch-0.4.0-cp27-cp27mu-linux_x86_64.whl
         - pip install -q torchvision
