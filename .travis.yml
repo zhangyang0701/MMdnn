@@ -5,7 +5,6 @@ dist: xenial
 cache:
   directory:
     - $HOME/.cache/pip
-    - $TRAVIS_BUILD_DIR/tests/cache
 
 before_install:
   - export PATH=$PATH
