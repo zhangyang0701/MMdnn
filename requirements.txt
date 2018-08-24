@@ -5,4 +5,4 @@ pillow == 5.2.0
 keras==2.1.6
 coremltools==0.8
 mxnet==1.1.0.post0
-cntk==2.5
+# cntk==2.5
