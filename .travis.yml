@@ -1,6 +1,11 @@
-sudo: false
+sudo: required
 
 dist: xenial
+
+cache:
+  directory:
+    - $HOME/.cache/pip
+    - $TRAVIS_BUILD_DIR/tests/cache
 
 before_install:
   - export PATH=$PATH
@@ -14,6 +19,11 @@ after_success: true
 after_script: true
 
 script: bash test.sh
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
 
 matrix:
   include:
